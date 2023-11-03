@@ -1,33 +1,35 @@
 
 h1 {
-   font-family: 'Montserrat', sans-serif;
+   font-family: 'Montserrat';
    font-size: 12px;
    font-weight: 500;
    text-transform: uppercase;
-   color: #1C232B;
-   margin:1rem;
-
+   color: hsl(228, 12%, 48%);
+   margin: 30px 0px 0px 30px;
+    letter-spacing: 4px;
 }
 
 h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Fraunces';
     font-size: 32px;
     font-weight: 700;
-    color: #1C232B;
+    color: hsl(212, 21%, 14%);
     text-align: left;
-    margin: 1rem;
+    margin: 0px 30px 0px 30px;
 }
 
 p {
     font-size: 14px;
-    font-family: 'Monserrat', sans-serif;
-    color: #1C232B;
-    margin: 1rem;
+    font-family: 'Monserrat';
+    color: hsl(228, 12%, 48%);
+    margin: 0px 30px 10px 30px;
     text-align: left;
 }
 
 html, body {
     height: 100%;
+    margin:0;
+    padding:0;
 }
 
 body {
@@ -49,26 +51,27 @@ body {
 }
 
 .price1 {
-    font-family: 'Fraunces', sans-serif;
-    font-style: bold;
+    font-family: 'Fraunces';
+    font-weight: 700;
     font-size: 32px;
-    margin: 20px;
     color: #3D8168;
+    margin-left: 30px;
     text-align: left;
 }
 
+
 .price2 {
-    font-family: 'Monserrat', sans-serif;
+    font-family: 'Monserrat';
     font-size: 13px;
-    margin: 10 rem;
-    color: #1C232B;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    margin-left: 20px;
     text-align: right;
 }
 
 section {
-    background-color: white;
-    height: 450px;
-    max-width: 600px;
+    height: 375px;
+    max-width: 320px;
     display: flex;
     flex-basis: 20rem;
     flex-shrink: 0;
@@ -78,11 +81,13 @@ section {
 }
 
 .sectionContent {
-    margin: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: white;
 }
 
 img {
@@ -98,43 +103,34 @@ button {
     background-color: #3D8168;
     color: white;
     border-radius: 10px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     font-size: 14px;
-    font-style: bold;
+    font-weight: 500;
     cursor: pointer;
-    width: 250px;
+    width: 275px;
     height: 50px;
     align-self: center;
-    margin: auto;
+    margin: 0px 20px 30px 20px;
 }
 
 button:hover {
     background-color: #1A4032;
 }
 
-@media screen and (max-width: 656px){
+@media (max-width: 656px){
     
     img {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         border-bottom-left-radius: 0px;
+        object-fit: cover;
     }
-
-    section {
+    
+    .sectionContent {
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
         border-top-right-radius: 0px; 
     }
 }
 
-@media screen and (max-height: 890px;){
-
-    .main {
-        width: 50%;
-        height: 50%;
-        flex-basis: 50%;
-    }
-    
-
-    
 }
